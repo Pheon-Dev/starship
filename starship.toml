@@ -4,16 +4,8 @@
 # Inserts a blank line between shell prompts
 add_newline = false
 
-# # Replace the '❯' symbol in the prompt with '➜'
-# [character] # The name of the module we are configuring is 'character'
-# success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
-
-# # Disable the package module, hiding it from the prompt completely
-# [package]
-# disabled = false
-
 format = """
-[│ ](bold purple)\
+[┃   ](bold purple)\
 $git_branch\
 $git_state\
 $git_status\
@@ -26,16 +18,19 @@ $node_js\
 $package\
 $cmd_duration\
 $line_break\
-[│ ](bold purple)\
+[┃ ](bold purple)\
 $username\
 $hostname\
 $directory\
 $character"""
 
 [character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+success_symbol = "[❯](bold purple)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold purple)"
+vimcmd_replace_one_symbol = "[❮](bold green)"
+vimcmd_replace_symbol = "[❮](bold green)"
+vimcmd_visual_symbol = "[❮](bold yellow)"
 
 [git_status]
 format = "[[(* $conflicted$untracked$modified$staged$renamed$deleted)](218)($ahead$behind$stashed)]($style)"
