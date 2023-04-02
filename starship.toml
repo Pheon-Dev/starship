@@ -15,6 +15,7 @@ $c\
 $docker_context\
 $lua\
 $node_js\
+$python\
 $package\
 $cmd_duration\
 $line_break\
@@ -70,6 +71,9 @@ style = "green"
 
 [golang]
 symbol = " "
+
+[python]
+symbol = "  "
 
 [lua]
 symbol = " "
