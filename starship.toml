@@ -12,10 +12,10 @@ $git_status\
 $golang\
 $rust\
 $c\
-$docker_context\
 $lua\
 $node_js\
 $python\
+$docker_context\
 $package\
 $cmd_duration\
 $line_break\
@@ -26,11 +26,11 @@ $directory\
 $character"""
 
 [character]
-success_symbol = "[❯](bold purple)"
+success_symbol = "[❯](bold green)"
 error_symbol = "[❯](bold red)"
 vimcmd_symbol = "[❮](bold purple)"
-vimcmd_replace_one_symbol = "[❮](bold green)"
-vimcmd_replace_symbol = "[❮](bold green)"
+vimcmd_replace_one_symbol = "[❮](bold blue)"
+vimcmd_replace_symbol = "[❮](bold blue)"
 vimcmd_visual_symbol = "[❮](bold yellow)"
 
 [git_status]
@@ -66,7 +66,7 @@ symbol = " "
 
 [git_branch]
 # symbol = " "
-symbol = "⎇  "
+symbol = "  "
 style = "green"
 
 [golang]
