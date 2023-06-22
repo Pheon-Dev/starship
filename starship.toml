@@ -2,7 +2,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 # Inserts a blank line between shell prompts
-add_newline = true
+add_newline = false
 
 format = """
 [┃   ](bold purple)\
@@ -19,9 +19,9 @@ $node_js\
 $python\
 $docker_context\
 $package\
-$cmd_duration\
 $line_break\
 [┃ ](bold purple)\
+$cmd_duration\
 $directory\
 $character"""
 
