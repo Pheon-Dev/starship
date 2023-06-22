@@ -2,7 +2,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 # Inserts a blank line between shell prompts
-add_newline = false
+add_newline = true
 
 format = """
 [┃   ](bold purple)\
@@ -11,6 +11,8 @@ $git_state\
 $git_status\
 $golang\
 $rust\
+$battery\
+$time\
 $c\
 $lua\
 $node_js\
@@ -20,8 +22,6 @@ $package\
 $cmd_duration\
 $line_break\
 [┃ ](bold purple)\
-$username\
-$hostname\
 $directory\
 $character"""
 
@@ -87,3 +87,30 @@ symbol = " "
 [rust]
 symbol = " "
 
+[battery]
+full_symbol = '󰁹 '
+charging_symbol = '󱐋 '
+discharging_symbol = '󱐌 '
+
+[[battery.display]]
+threshold = 20
+style = 'bold red'
+
+[[battery.display]]
+threshold = 30
+style = 'bold red'
+
+[[battery.display]]
+threshold = 50
+style = 'bold yellow'
+
+[[battery.display]]
+threshold = 100
+style = 'bold green'
+
+[time]
+disabled = false
+format = 'at [$time]($style) '
+time_format = '%a %b %d %R'
+# utc_time_offset = '-5'
+# time_range = '10:00:00-14:00:00'
