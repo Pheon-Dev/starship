@@ -65,7 +65,6 @@ style = "blue"
 symbol = " "
 
 [git_branch]
-# symbol = " "
 symbol = "  "
 style = "green"
 
@@ -104,13 +103,14 @@ style = 'bold red'
 threshold = 50
 style = 'bold yellow'
 
-[[battery.display]]
-threshold = 100
-style = 'bold green'
+# [[battery.display]]
+# threshold = 100
+# style = 'bold green'
 
 [time]
 disabled = false
 format = 'at [$time]($style) '
-time_format = '%a %b %d %R'
+time_format = '%R'
+# time_format = '%a %b %d %R'
 # utc_time_offset = '-5'
-# time_range = '10:00:00-14:00:00'
+# time_range = '12:33:00-14:00:00'
